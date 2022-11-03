@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=Free, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
 
     /* first card */
 
@@ -13,8 +16,8 @@
   /* background: #d6f126; */
   color: #242424;
   border: 2px solid #333333;
-  width: 15%;
-  padding: 48px;
+  width: 25%;
+  padding: 30px;
   border-radius: 16px;
 }
 
@@ -33,13 +36,13 @@ font-size: 20px;
   background: #ffeab6;
   color: #242424;
   /* border: 2px solid #0a0a0a; */
-  width: 15%;
-  padding: 48px;
+  width: 25%;
+  padding: 30px;
   border-radius: 16px;
 }
 
 /* second card's button */
-.Try_for_free{
+.try_for_free{
 outline: none;
 border: 1px solid #333333;
 background-color: #ffffff;
@@ -48,14 +51,21 @@ padding: 20px 40px;
 font-size: 20px;
 }
 
+/* Most popular */
+.most_popular{
+  background-color: #2d7ff9;
+  padding: 24px 56px;
+  border-radius: 20px 20px 0 0;
+  color: white;
+}
 
 /* third card */
     .pro {
   background-color: #d0f0fd;
   color: #242424;
   /* border: 2px solid #0a0a0a; */
-  width: 15%;
-  padding: 48px;
+  width: 25%;
+  /* padding: 30px; */
   border-radius: 16px;
 }
 
@@ -70,6 +80,12 @@ padding: 20px 40px;
 font-size: 20px;
 }
 
+/* third card's text */
+.text{
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+
 
 /* fourth card */
 
@@ -77,8 +93,8 @@ font-size: 20px;
   background-color: #333333;
   color: #ffffff;
   border: 2px solid #0a0a0a ;
-  width: 15%;
-  padding: 48px;
+  width: 25%;
+  padding: 30px;
   border-radius: 16px;
 }
 
@@ -130,7 +146,7 @@ font-size: 20px;
     <h1>$10</h1>
     <p>per seat /month billed annually</p>
     <p><strong>$12</strong> billed monthly</p>
-     <button class="Try_for_free">Try for Free</button>
+     <button class="try_for_free">Try for Free</button>
 
     <div>
      <p>Everything in Free, plus:</p>
@@ -152,14 +168,18 @@ font-size: 20px;
   <br>
   
  <div class="pro">
-    <h4>Pro</h4>
-    <p>For teams and departments who need to build connected apps to power their most important processes</p>
-    <h1>$20</h1>
-    <p>per seat /month billed annually</p>
-    <p><strong>$24</strong> billed monthly</p>
-     <button class="third_btn">Try for Free</button>
+    <div class="most_popular">
+      <h4>Most popular</h4>
+    </div>
+    <div class="text">
+      <h4>Pro</h4>
+      <p>For teams and departments who need to build connected apps to power their most important processes</p>
+      <h1>$20</h1>
+      <p>per seat /month billed annually</p>
+      <p><strong>$24</strong> billed monthly</p>
+      <button class="third_btn">Try for Free</button>
 
-    <div>
+      <div>
      <p>Everything in Free, plus:</p>
      <ul>
         <li>10 extensions per base</li>
@@ -169,6 +189,7 @@ font-size: 20px;
         <li>6-month revision & snapshot history</li>
         <li>Automatic table syncing</li>
       </ul>
+      </div>
     </div>
   </div>
 
