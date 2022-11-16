@@ -4,12 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=Free, initial-scale=1.0">
-  <title>Document</title>
+  <title>Airtable Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
+.price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.price p{
+  font-size: 18px;
+}
+
+.price h1{
+font-size: 56px;
+font-weight: 700;
+}
+
+.description{
+  font-size: 0.9rem;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.monthly{
+  margin-top: 0;
+  /* margin-bottom: 1.5rem; */
+}
     /* Tried to play with background Image */
 /* body{
   background-image: url("noodles.jpeg");
@@ -20,11 +52,17 @@
 } */
     /* first card */
 
-    .free {
+    #free {
   /* background: #d6f126; */
   color: #242424;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
   width: 25%;
+  height: 700px;
   padding: 30px;
   border-radius: 16px;
 }
@@ -33,10 +71,11 @@
 .sign_up{
   outline: none;
   border: 1px solid #0a0a0a;
-background-color: #ffffff;
-border-radius: 24px;
-padding: 20px 40px;
-font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 20px 32px;
+  text-align: center;
+  font-size: 18px;
 }
 
 /* second card */
@@ -45,8 +84,14 @@ font-size: 20px;
   color: #242424;
   /* border: 2px solid #0a0a0a; */
   width: 25%;
+  height: 700px;
   padding: 30px;
   border-radius: 16px;
+  /* letter-spacing: 0.01em; */
+  /* line-height: 1.25; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
 }
 
 /* second card's button */
@@ -55,25 +100,25 @@ outline: none;
 border: 1px solid #333333;
 background-color: #ffffff;
 border-radius: 24px;
-padding: 20px 40px;
-font-size: 20px;
+padding: 16px 32px;
+font-size: 18px;
 }
 
 /* Most popular */
 .most_popular{
   background-color: #2d7ff9;
-  padding: 24px 56px;
+  padding: 1px 56px;
   border-radius: 20px 20px 0 0;
-  color: white;
+  color: white; 
 }
 
 /* third card */
     .pro {
   background-color: #d0f0fd;
   color: #242424;
-  /* border: 2px solid #0a0a0a; */
   width: 25%;
-  /* padding: 30px; */
+  height: 700px;
+  margin: 20px 40px;
   border-radius: 16px;
 }
 
@@ -84,8 +129,9 @@ border: none;
 color: #ffffff;
 background-color: #2d7ff9;
 border-radius: 24px;
-padding: 20px 40px;
-font-size: 20px;
+padding: 20px 32px;
+text-align: center;
+font-size: 18px;
 }
 
 /* third card's text */
@@ -97,153 +143,195 @@ font-size: 20px;
 
 /* fourth card */
 
-    .enterprise {
-  background-color: #333333;
-  color: #ffffff;
-  border: 2px solid #0a0a0a ;
-  width: 25%;
-  padding: 30px;
-  border-radius: 16px;
+.enterprise {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #0a0a0a ;
+    width: 25%;
+    padding: 30px;
+    border-radius: 16px;
+    letter-spacing: 0.01em;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 }
 
 /* fourth card's button */
 .contact{
   outline: none;
   border: none;
-  padding:24px 40px;
-  border-radius: 16px;
+  padding:20px 32px;
+  border-radius: 24px;
   background-color: aqua;
-  font-size: 20px;
-
+  text-align: center;
+  font-size: 18px;
 }
 
-.randomness{
+ul{
+justify-content: left;
+align-items: left;
+padding-left: 0%;
+text-align: left;
+}
+
+li{
+  list-style-type: none;
+  line-height:1.6;
+}
+
+/* .randomness{
  width: 240px;
   height: 150px;
   margin: 6px;
   padding: 10px;
   border: 2px solid black;
-
-}
+} */
   </style>
 </head>
 <body>
-<div class="randomness">
+  <!-- <div class="randomness">
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis aliquam in doloremque itaque. Similique voluptatum eligendi nam esse animi!</p>
-</div>
-  <!-- First Card -->
+</div> -->
 
-  <div class="free">
-    <h4>Free</h4>
-    <p>For individuals or very small teams just getting started with Airtable</p>
-    <h1>Free</h1>
-     <button class="sign_up">Choose Free</button>
+  <div class="container">
+    <!-- First Card -->
 
-    <div>
-     <p>Free includes:</p>
-     <ul>
-        <li>Unlimited bases</li>
-        <li>Up to 5 creators or editors</li>
-        <li>Unlimited commenter & read-only users</li>
-        <li>Interface Designer</li>
-        <li>1 extension per base</li>
-        <li>1 sync integration</li>
-        <li>1,200 records per base</li>
-        <li>2GB of attachments per base</li>
-      </ul>
+    <div id="free">
+     <main>
+        <div>
+          <h3>Free</h3>
+          <p class="description">For individuals or very small teams just getting started with Airtable</p>
+          <h1>Free</h1>
+        </div>
+       <button class="sign_up">Choose Free</button>
+
+        <div>
+       <p>Free includes:</p>
+        <ul>
+          <li><i class="ri-check-fill"></i>Unlimited bases</li>
+          <li><i class="ri-check-fill"></i>Up to 5 creators or editors</li>
+          <li><i class="ri-check-fill"></i>Unlimited commenter & read-only users</li>
+          <li><i class="ri-check-fill"></i>Interface Designer</li>
+          <li><i class="ri-check-fill"></i>1 extension per base</li>
+          <li><i class="ri-check-fill"></i>1 sync integration</li>
+          <li><i class="ri-check-fill"></i>1,200 records per base</li>
+          <li><i class="ri-check-fill"></i>2GB of attachments per base</li>
+        </ul>
+        </div>
+      </main>
     </div>
-  </div>
 
-  <!-- Second Card -->
-  <br>
-  <br>
-  <br>
-  
- <div class="plus">
-    <h4>Plus</h4>
-    <p>For teams looking to create connected apps to manage their own workflows</p>
-    <h1>$10</h1>
-    <p>per seat /month billed annually</p>
-    <p><strong>$12</strong> billed monthly</p>
-     <button class="try_for_free">Try for Free</button>
+    <!-- Second Card -->
+    <div class="plus">
+        <div>
+        <h3>Plus</h3>
+        <p class="description">For teams looking to create connected apps to manage their own workflows</p>
+        </div>
+
+      <section class="subcription-section">
+        <div class="price">
+          <h1>$10</h1>
+          <p>per seat /month billed annually</p>
+        </div>
+        <p class="monthly">$12 billed monthly</p>
+        <button class="try_for_free">Try for Free</button>
+     </section>
 
     <div>
      <p>Everything in Free, plus:</p>
      <ul>
-        <li>3 extensions per base</li>
-        <li>3 sync integrations</li>
-        <li>5,000 records per base</li>
-        <li>Custom branded forms</li>
-        <li>6-month revision & snapshot history</li>
-        <li>Automatic table syncing</li>
+        <li><i class="ri-check-fill"></i>3 extensions per base</li>
+        <li><i class="ri-check-fill"></i>3 sync integrations</li>
+        <li><i class="ri-check-fill"></i>5,000 records per base</li>
+        <li><i class="ri-check-fill"></i>Custom branded forms</li>
+        <li><i class="ri-check-fill"></i>6-month revision & snapshot history</li>
+        <li><i class="ri-check-fill"></i>Automatic table syncing</li>
       </ul>
     </div>
-  </div>
+    </div>
  
-   <!-- Third Card -->
-    
- <br>
-  <br>
-  <br>
+    <!-- Third Card -->
   
- <div class="pro">
-    <div class="most_popular">
-      <h4>Most popular</h4>
+  
+    <div class="pro">
+          <div class="most_popular">
+              <h4>Most popular</h4>
+          </div>
+        <div class="text">
+            <h3>Pro</h3>
+            <p class="description">For teams and departments who need to build connected apps to power their most important processes</p>
+           
+           <section class="subscription-section">
+              <div class="price">
+                <h1>$20</h1>
+                <p>per seat /month billed annually</p>
+              </div>
+                <p class="monthly">$24 billed monthly</p>
+                <button class="third_btn">Try for Free</button>
+           </section>
+          <div>
+              <p>Everything in Free, plus:</p>
+              <ul>
+            <li><i class="ri-check-fill"></i>10 extensions per base</li>
+            <li><i class="ri-check-fill"></i>3 sync integrations</li>
+            <li><i class="ri-check-fill"></i>5,000 records per base</li>
+            <li><i class="ri-check-fill"></i>Custom branded forms</li>
+            <li><i class="ri-check-fill"></i>6-month revision & snapshot history</li>
+            <li><i class="ri-check-fill"></i>Automatic table syncing</li>
+              </ul>
+          </div>
+        </div>
     </div>
-    <div class="text">
-      <h4>Pro</h4>
-      <p>For teams and departments who need to build connected apps to power their most important processes</p>
-      <h1>$20</h1>
-      <p>per seat /month billed annually</p>
-      <p><strong>$24</strong> billed monthly</p>
-      <button class="third_btn">Try for Free</button>
 
+    <!-- Fourth Card -->
+
+    <br>
+    <br>
+    <br>
+  
+    <div class="enterprise">
       <div>
-     <p>Everything in Free, plus:</p>
-     <ul>
-        <li>10 extensions per base</li>
-        <li>3 sync integrations</li>
-        <li>5,000 records per base</li>
-        <li>Custom branded forms</li>
-        <li>6-month revision & snapshot history</li>
-        <li>Automatic table syncing</li>
-      </ul>
+        <h4>Enterprise</h4>
+        <p class="description">For departments and organizations who need a secure, scalable, and customizable connected apps platform to stay aligned and move work forward</p>
       </div>
-    </div>
-  </div>
+<!--       
+      <section class="subcription-section">
+        <div class="price">
+          <h1>$10</h1>
+          <p>per seat /month billed annually</p>
+        </div>
+        <p class="monthly">$12 billed monthly</p>
+        <button class="try_for_free">Try for Free</button>
+     </section> -->
 
- <!-- Fourth Card -->
-
-   <br>
-  <br>
-  <br>
-  
- <div class="enterprise">
-    <h4>Enterprise</h4>
-    <p>For departments and organizations who need a secure, scalable, and customizable connected apps platform to stay aligned and move work forward</p>
-    <h1>$20</h1>
-    <p>per seat /month billed annually</p>
-    <p><strong>$24</strong> billed monthly</p>
-     <button class="contact">Try for Free</button>
+     <section>
+      <div class="price">
+        <h1>$20</h1>
+        <p>per seat /month billed annually</p>
+      </div>
+       <p class="monthly">$24 billed monthly</p>
+        <button class="contact">Try for Free</button>
+     </section>
 
     <div>
      <p>Everything in Pro, plus:</p>
      <ul>
-        <li>Unlimited workspaces per organization</li>
-        <li>Unlimited extensions</li>
-        <li>Salesforce & Jira on-prem sync integrations</li>
-        <li>250,000 records per base</li>
-        <li>1,000GB of attachments per base</li>
-        <li>Advanced interface controls</li>
-        <li>3-year revision & snapshot history</li>
-        <li>SAML-based single sign-on</li>
-        <li>Enterprise-wide admin panel</li>
-        <li>Ongoing Success Program</li>
-        <li>Included Professional Services/li>
-        <li>Add-On Professional Services</li>
+        <li><i class="ri-check-fill"></i>Unlimited workspaces per organization</li>
+        <li><i class="ri-check-fill"></i>Unlimited extensions</li>
+        <li><i class="ri-check-fill"></i>Salesforce & Jira on-prem sync integrations</li>
+        <li><i class="ri-check-fill"></i>250,000 records per base</li>
+        <li><i class="ri-check-fill"></i>1,000GB of attachments per base</li>
+        <li><i class="ri-check-fill"></i>Advanced interface controls</li>
+        <li><i class="ri-check-fill"></i>3-year revision & snapshot history</li>
+        <li><i class="ri-check-fill"></i>SAML-based single sign-on</li>
+        <li><i class="ri-check-fill"></i>Enterprise-wide admin panel</li>
+        <li><i class="ri-check-fill"></i>Ongoing Success Program</li>
+        <li><i class="ri-check-fill"></i>Included Professional Services/li>
+        <li><i class="ri-check-fill"></i>Add-On Professional Services</li>
       </ul>
     </div>
+    </div>
   </div>
-
 </body>
 </html>
